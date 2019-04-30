@@ -1,0 +1,64 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@mixin freshTeal {
+    background-color: #5CDB95;
+}
+
+@mixin lightest {
+    background-color: #EDF5E1;
+}
+
+@mixin darkest {
+    background-color: #05386B;
+}
+
+@mixin linksColor {
+    color: #8EE4AF;
+}
+
+$regularSpace: 15px;
+
+body {
+    @include freshTeal;
+}
+
+.content {
+    @include lightest;
+    margin-top: 15vh;
+    padding-top: $regularSpace;
+    padding-bottom: $regularSpace;
+    text-align: center;
+}
+
+.gameButtons {
+    padding-top: $regularSpace;
+    padding-bottom: $regularSpace;
+}
+
+.startButton {
+    @include darkest;
+}
+
+nav {
+    @include darkest;
+}
+
+nav a,
+button a {
+    @include linksColor;
+}
+
+.emphasise {
+    font-size: 1.3em;
+}
+
+.titleText {
+    font-weight: bold;
+}
