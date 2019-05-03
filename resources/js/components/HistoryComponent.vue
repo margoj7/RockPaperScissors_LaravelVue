@@ -16,7 +16,7 @@
           <tr v-for="gameScore in gameScores" :key="gameScore.id">
             <td>{{ gameScore.id }}</td>
             <td>{{ gameScore.playerChoice }}</td>
-            <td>{{ gameScore.playerChoice }}</td>
+            <td>{{ gameScore.computerChoice }}</td>
             <td>{{ gameScore.winner }}</td>
             <td>{{ gameScore.created_at }}</td>
           </tr>
