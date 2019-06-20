@@ -10,7 +10,7 @@
       <p class="emphasise">Behold! The marvelous world of<br>
       <span class="titleText">Rock! Paper! Scissors!</span></p>
       <button type="button" class="btn btn-primary startButton">
-        <router-link to="/game" class="nav-link">Let's play a game!</router-link>
+        <router-link to="/game" class="nav-link startLink">Let's play a game!</router-link>
       </button>
     </div>
   </div>

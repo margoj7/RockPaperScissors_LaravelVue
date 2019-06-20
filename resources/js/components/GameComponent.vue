@@ -22,32 +22,50 @@
 export default {
   data() {
     return {
+
       playerChoice: null,
       computerChoice: null,
       winner: null
+
     };
   },
   methods: {
     choose: function(playerChoice) {
-      this.playerChoice = "Player chose " + playerChoice;
+
       const possiblePicks = ["Rock", "Paper", "Scissors"];
       let computerChoice = possiblePicks[Math.floor(Math.random() * 3)];
-      this.computerChoice = "Computer chose " + computerChoice;
       let winner = "Player";
+
+
+      this.playerChoice = "Player chose " + playerChoice;
+
+      this.computerChoice = "Computer chose " + computerChoice;
+
       if (playerChoice == computerChoice) {
+
         winner = "Draw";
+
       } else if (
+
         (computerChoice == "Rock" && playerChoice == "Scissors") ||
         (computerChoice == "Scissors" && playerChoice == "Paper") ||
         (computerChoice == "Paper" && playerChoice == "Rock")
+
       ) {
+
         winner = "Computer";
       }
+
       if (winner == "Draw"){
+
         this.winner = "Draw";
+
       } else {
+
       this.winner = winner + " won";
+
       }
+
       axios({
         url: "http://localhost:8000/api/game/play",
         method: "post",

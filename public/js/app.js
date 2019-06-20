@@ -1827,11 +1827,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     choose: function choose(playerChoice) {
-      this.playerChoice = "Player chose " + playerChoice;
       var possiblePicks = ["Rock", "Paper", "Scissors"];
       var computerChoice = possiblePicks[Math.floor(Math.random() * 3)];
-      this.computerChoice = "Computer chose " + computerChoice;
       var winner = "Player";
+      this.playerChoice = "Player chose " + playerChoice;
+      this.computerChoice = "Computer chose " + computerChoice;
 
       if (playerChoice == computerChoice) {
         winner = "Draw";
@@ -37488,7 +37488,7 @@ var render = function() {
         [
           _c(
             "router-link",
-            { staticClass: "nav-link", attrs: { to: "/game" } },
+            { staticClass: "nav-link startLink", attrs: { to: "/game" } },
             [_vm._v("Let's play a game!")]
           )
         ],

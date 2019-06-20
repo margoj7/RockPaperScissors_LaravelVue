@@ -29,6 +29,15 @@ body {
     @include freshTeal;
 }
 
+nav {
+    @include darkest;
+}
+
+nav a,
+button a {
+    @include linksColor;
+}
+
 .content {
     @include lightest;
     margin-top: 15vh;
@@ -46,12 +55,7 @@ body {
     @include darkest;
 }
 
-nav {
-    @include darkest;
-}
-
-nav a,
-button a {
+.startLink:hover {
     @include linksColor;
 }
 

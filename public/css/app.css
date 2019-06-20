@@ -10666,6 +10666,15 @@ body {
   background-color: #5CDB95;
 }
 
+nav {
+  background-color: #05386B;
+}
+
+nav a,
+button a {
+  color: #8EE4AF;
+}
+
 .content {
   background-color: #EDF5E1;
   margin-top: 15vh;
@@ -10683,12 +10692,7 @@ body {
   background-color: #05386B;
 }
 
-nav {
-  background-color: #05386B;
-}
-
-nav a,
-button a {
+.startLink:hover {
   color: #8EE4AF;
 }
 
